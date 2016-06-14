@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+/*@font-face {
+    font-family: SourceHanSans;
+    src: url('../fonts/SourceHanSans-Normal.otf') format("opentype");
+}*/
+@font-face {
+    font-family: Inconsolata;
+    src: url('../fonts/Inconsolata.otf') format("opentype");
+}
+
+html,body {
+    height: 100%;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    margin: 0px;
+}
+.area {
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    position: relative;
+}
+.page-bottom-indicator {
+    width: 60px;
+    height: 16px;
+    background: #fff;
+    position: absolute;
+    border-radius: 8px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: .5;
+
+}
+/* Page Colors */
+#page-1 {
+    background-image: -webkit-linear-gradient(180deg, #3e3092,#06d4d2);
+    background-image: linear-gradient(180deg,#3e3092,#06d4d2);
+    /*background-color: #292c36;*/
+}
+#page-2{
+    background-image: -webkit-linear-gradient(180deg, #4456d6,#d832ba);
+    background-image: linear-gradient(180deg, #4456d6,#d832ba);
+    /*background-color: #352e7e;*/
+}
+#page-3{
+    background-image: -webkit-linear-gradient(180deg, #009999,#9f2dff);
+    background-image: linear-gradient(180deg, #009999,#9f2dff);
+    /*background-color: #352e7e;*/
+}
+#page-4{
+    background-image: -webkit-linear-gradient(180deg, #03cf9e, #2623fa);
+    background-image: linear-gradient(180deg, #03cf9e, #2623fa);
+    /*background-color: #352e7e;*/
+}
+
+.page-bkg-color-1 {
+    background-image: -webkit-linear-gradient(180deg, #3e3092,#06d4d2);
+    background-image: linear-gradient(180deg,#3e3092,#06d4d2);
+    /*background-color: #292c36;*/
+}
+.page-bkg-color-2{
+    background-image: -webkit-linear-gradient(180deg, #4456d6,#d832ba);
+    background-image: linear-gradient(180deg, #4456d6,#d832ba);
+    /*background-color: #352e7e;*/
+}
+.page-bkg-color-3{
+    background-image: -webkit-linear-gradient(180deg, #009999,#9f2dff);
+    background-image: linear-gradient(180deg, #009999,#9f2dff);
+    /*background-color: #352e7e;*/
+}
+.page-bkg-color-4{
+    background-image: -webkit-linear-gradient(180deg, #03cf9e, #2623fa);
+    background-image: linear-gradient(180deg, #03cf9e, #2623fa);
+    /*background-color: #352e7e;*/
+}
+
+#page-1 {
+    color: #fff;
+    position: relative;
+}
+
+#page-1-content-wrapper{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: -120px;
+}
+
+#page-1 .title {
+    font-family: Inconsolata;
+    font-size: 5.2em;
+}
+
+#page-1 .line-1 {
+    font-family: Inconsolata;
+    color: #ffffff;
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+#page-1 .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#page-1 .color-area{
+    margin: 0px;
+    display: inline;
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+#page-1 .color-area span:nth-child(1){
+    color: #78a165;
+}
+#page-1 .color-area span:nth-child(2){
+    color: #bd3b9f;
+}
+#page-1 .color-area span:nth-child(3){
+    color: #b3784c;
+}
+#page-1 .color-area span:nth-child(4){
+    color: #df4336;
+}
+#page-1 .color-area span:nth-child(5){
+    color: #2b8289;
+}
+
+
+
+.area-title {
+    font-size: 2em;
+    font-family: Inconsolata, "微软雅黑",SourceHanSans;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #fff;
+}
+#page-2 {
+
+}
+.card-box {
+    text-align: center;
+    padding-top: 90px; 
+    padding-bottom: 20px;
+}
+.card-container {
+    min-width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    /*vertical-align: middle;*/
+}
+.force-middle {
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+}
+.card {
+    width: 380px;
+    height: 550px;
+    margin: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.14),0 10px 8px -10px rgba(0,0,0,.2),0 4px 10px 0 rgba(0,0,0,.12);
+    position: relative;
+    padding-top: 20px;
+    padding-left:5px;
+    border-radius: 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+.card .card-header {
+    margin-top: 0px;
+}
+.card .card-header .avatar {
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    border-radius: 49px;
+    border: solid 2px #e0e0e0;
+    background-color: #fff;
+    margin: 0px auto;
+}
+.card .card-header .avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-header .name {
+    font-family: Roboto, "微软雅黑", SourceHanSans;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 2em;
+    margin-top: 10px;
+    color: #424242; 
+}
+
+.card .card-content {
+    font-family: "微软雅黑", SourceHanSans,Roboto;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    padding: 5px 15px;
+}
+.card .card-content img {
+    display: inline;
+}

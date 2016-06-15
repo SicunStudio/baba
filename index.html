@@ -5,26 +5,28 @@
     <title>SICUN 2016</title>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/data.js"></script>
+    <script src="http://o79pnjsg2.bkt.clouddn.com/baba/js/jquery-2.1.4.min.js"></script>
+    <script src="http://o79pnjsg2.bkt.clouddn.com/baba/js/angular.min.js"></script>
+    <script src="http://o79pnjsg2.bkt.clouddn.com/baba/js/data.js"></script>
+    <!-- <script src="js/jquery.onepage-scroll.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/onepage-scroll.css"> -->
     <!-- <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script> -->
     <!-- <script src="js/angular-sanitize.min.js"></script> -->
 </head>
 <body ng-app="toBaba">
     <section class="area" id="page-1" data-page="1">
         <div id="page-1-content-wrapper">
-            <img src="img/logo-white.png" alt="logo" class="logo">
+            <img src="http://o79pnjsg2.bkt.clouddn.com/baba/img/logo-white.png" alt="logo" class="logo">
             <p class="title">Hello, <span class="color-area"><span>B</span><span>a</span><span>b</span><span>a</span><span>!</span></span></p>
             <p class="line-1">/* Presented by SICUN STUDIO 2016 */</p>
         </div>
         <span class="page-bottom-indicator"></span>
     </section>
     <section class="area" id="page-2" data-page="2" ng-controller="g3">
-        <div class="area-title">From 大三 import words;</div>
+        <div class="area-title">From juniors import words</div>
         <div class="card-box">
             <div class="card-container">
-                <div class="card" ng-repeat="p in Data">
+                <div class="card {{ p.ext }}" ng-repeat="p in Data">
                     <div class="card-header">
                         <div class="avatar"><img src="img/avatar/{{ p.avatar }}" alt=""></div>
                         <div class="name">{{ p.name }}</div>
@@ -36,12 +38,12 @@
         </div>
     </section>
      <section class="area" id="page-3" data-page="3" ng-controller="g2">
-        <div class="area-title">From 大二 import words;</div>
+        <div class="area-title">From sophomores import words</div>
         <div class="card-box">
             <div class="card-container">
-                <div class="card" ng-repeat="p in Data">
+                <div class="card {{ p.ext }}" ng-repeat="p in Data">
                     <div class="card-header">
-                        <div class="avatar"><img src="img/avatar/{{ p.avatar }}" alt=""></div>
+                        <div class="avatar"><img src="http://o79pnjsg2.bkt.clouddn.com/baba/img/avatar/{{ p.avatar }}" alt=""></div>
                         <div class="name">{{ p.name }}</div>
                     </div>
                     <div class="card-content" ng-bind-html="p.content | to_trusted"></div>
@@ -51,12 +53,12 @@
     </section>
 
     <section class="area" id="page-4" data-page="4" ng-controller="gm">
-        <div class="area-title">From 继承者们 import words;</div>
+        <div class="area-title">From inheritors import words</div>
         <div class="card-box">
             <div class="card-container">
-                <div class="card" ng-repeat="p in Data">
+                <div class="card {{ p.ext }}" ng-repeat="p in Data">
                     <div class="card-header">
-                        <div class="avatar"><img src="img/avatar/{{ p.avatar }}" alt=""></div>
+                        <div class="avatar"><img src="http://o79pnjsg2.bkt.clouddn.com/baba/img/avatar/{{ p.avatar }}" alt=""></div>
                         <div class="name">{{ p.name }}</div>
                     </div>
                     <div class="card-content" ng-bind-html="p.content | to_trusted"></div>
@@ -64,8 +66,18 @@
             </div>
         </div>
     </section> 
-
+    <section class="area" id="page-5" data-page="5" ng-controller="pic">
+    <div class="area-title">From history import photos</div>
+        <div class="card-box">
+            <div class="card-container">
+                <div class="card card-pic {{p.size}}" ng-repeat="p in Data">
+                    <img src="http://o79pnjsg2.bkt.clouddn.com/baba/img/pic/{{ p.name }}" alt="">
+                </div>          
+            </div>
+        </div>
+    </section>
     <script src="js/ng-controller.js"></script>
     <script src="js/page.js"></script>
+
 </body>
 </html>

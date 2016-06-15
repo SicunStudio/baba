@@ -14,6 +14,10 @@ app.controller('gm',function ($scope) {
     $scope.Data=mp;
 });
 
+app.controller('pic',function($scope){
+    $scope.Data=pic;
+});
+
 app.filter('to_trusted', ['$sce', function ($sce) {
 return function (text) {
     return $sce.trustAsHtml(text);
